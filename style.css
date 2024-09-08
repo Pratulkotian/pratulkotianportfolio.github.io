@@ -1,34 +1,85 @@
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header{
+    padding: 1px;
+    background-color: #F0F8FF;
+    margin-bottom: 40px;
+}
+header h1{
+    color: white;
+    text-align: center;
+}
+
+.contain{
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.pic{
+    width: 50%;
+    float: left;
+    height: 100%;
     display: flex;
-    flex-direction:column;
     align-items: center;
-    background-color:blanchedalmond ;
 }
-.header,.phone,.details{
-    background:rgb(157, 141, 141);
-    padding:20px;
-    margin:20px;
-    width:100%;
-    max-width:600px;
-    box-shadow:0 0 10px rgba(0,0,0,0,1);
+
+.pic img{
+    width: 200px;
+    max-width: 600px;
+    flex-grow: 0.2;
 }
-.header h1{
-    margin:0;
-    font-size:zeu;
-    text-align:center;
-    color:pink;
+.about{
+    width: 50%;
+    float: right;
 }
-.photo img{
-    display:block;
-    margin:0 auto;
-    max-width:100%;
+
+.pic img{
+    border-radius: 50%;
 }
-.details{
-    font-size:1em;
-    color: rgb(165, 151, 42);
-    background-color: rgb(25, 0, 139);
+
+p{
+    font-size: 1.2rem;
+}
+
+table{
+    margin-top: 60px;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+}
+
+td, th{
+    text-align: center;
+    padding: 8px 80px;
+}
+
+.skills h1{
+    font-size: 2rem;
+}
+
+.skills{
+    width: 100%;
+}
+
+.tech{
+    width: 50%;
+    float: left;
+}
+
+.soft{
+    width: 50%;
+    float: right;
+}
+
+footer{
+    padding: 16px;
+    text-align: center;
+    background-color: #F0F8FF;
+    color: white;
+    font-weight: bold;
 }
